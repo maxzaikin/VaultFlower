@@ -427,3 +427,13 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# VaultFlower specific
+**/appsettings.*.json
+!**/appsettings.json
+!**/appsettings.Development.json
+**/secrets.json
+deploy/vault/*.hcl
+deploy/certs/
+*.pfx
+*.p12
