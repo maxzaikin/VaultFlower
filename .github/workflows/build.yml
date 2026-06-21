@@ -21,10 +21,10 @@ jobs:
           dotnet-version: '9.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore VaultFlower.sln
+        run: dotnet restore VaultFlower.slnx
 
       - name: Build solution
-        run: dotnet build VaultFlower.sln --no-restore --configuration Release
+        run: dotnet build VaultFlower.slnx --no-restore --configuration Release
 
       - name: Run tests
-        run: dotnet test VaultFlower.sln --no-build --configuration Release --verbosity normal
+        run: dotnet test VaultFlower.slnx --no-build --configuration Release --verbosity normal
